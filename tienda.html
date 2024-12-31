@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,39 +50,61 @@
                 <button onclick="agregarProducto('Cotizaciones')">Solicitar</button>
             </div>
         </section>
-    </main>
 
-    <div id="carrito"></div>
+        <!-- Carrito de compras -->
+        <section id="carrito">
+            <h2>Tu carrito</h2>
+            <ul id="lista-carrito">
+                <!-- Los productos agregados se mostrarán aquí -->
+            </ul>
+            <button onclick="pagar()">Realizar Pago</button>
+            <button onclick="limpiarCarrito()">Limpiar Carrito</button>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 NB Comunicación Digital. Todos los derechos reservados.</p>
     </footer>
 
     <script>
-        // Evita declarar múltiples veces
         if (!window.productos) {
             window.productos = [];
         }
 
+        // Función para agregar un producto al carrito
         function agregarProducto(producto) {
             window.productos.push(producto);
+            actualizarCarrito();
             alert(`Producto agregado: ${producto}`);
         }
 
+        // Función para mostrar los productos en el carrito
+        function actualizarCarrito() {
+            const carritoDiv = document.getElementById('lista-carrito');
+            carritoDiv.innerHTML = '';  // Limpiar la lista actual
+            window.productos.forEach(function(producto) {
+                const li = document.createElement('li');
+                li.textContent = producto;
+                carritoDiv.appendChild(li);
+            });
+        }
+
+        // Función para realizar el pago
         function pagar() {
             if (window.productos.length === 0) {
                 alert('No hay productos en el carrito.');
                 return;
             }
             alert('Gracias por tu compra!');
+            limpiarCarrito();
         }
 
+        // Función para limpiar el carrito
         function limpiarCarrito() {
             window.productos = [];
+            actualizarCarrito();
             alert('El carrito está vacío.');
         }
     </script>
 </body>
 </html>
-
-

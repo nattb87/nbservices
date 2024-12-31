@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NB Comunicación Digital
 
 Bienvenido al repositorio de **NB Comunicación Digital**, una plataforma diseñada para ofrecer servicios de comunicación digital que transforman tu marca y mejoran tu presencia online.
@@ -59,4 +60,8 @@ El proyecto se organiza de la siguiente manera:
 Creado por **NB Comunicación Digital** para ofrecer soluciones innovadoras en comunicación digital. Todos los derechos reservados (2024).
 
 
-Para preguntas o sugerencias, contáctanos a través de la página de [Contacto](contact.html).
+Para preguntas o sugerencias, contáctanos a través de la página de contact.html
+
+# comunicacion-digital
+
+>>>>>>> gh-pages

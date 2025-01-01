@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="index.html">NB Comunicación Digital</a>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="about.html">Sobre Nosotros</a></li>
+      <li><a href="community_manager.html">Community Manager</a></li>
+      <li><a href="paid_media.html">Paid Media</a></li>
+      <li><a href="copywriting.html">Copywriting</a></li>
+      <li><a href="estrategia_digital.html">Estrategia Digital</a></li>
+      <li><a href="tienda.html">Contrátanos</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Contacto</h1>
+  </header>
+
+  <main>
+    <!-- Formulario con FormButton -->
+    <script>
+      window.formbutton = window.formbutton || function() {
+        (formbutton.q = formbutton.q || []).push(arguments);
+      };
+
+      formbutton("create", {
+        action: "https://formspree.io/f/xgvezeog",
+        title: "¿Cómo podemos ayudarte?",
+        fields: [
+          { 
+            type: "email", 
+            label: "Correo electrónico:", 
+            name: "email",
+            required: true,
+            placeholder: "tu@email.com"
+          },
+          {
+            type: "textarea",
+            label: "Mensaje:",
+            name: "message",
+            placeholder: "¿En qué podemos ayudarte?"
+          },
+          {
+            type: "submit"
+          }
+        ],
+        styles: {
+          title: {
+            backgroundColor: "#003850"
+          },
+          button: {
+            backgroundColor: "#0078d4"
+          }
+        }
+      });
+    </script>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 NB Comunicación Digital. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

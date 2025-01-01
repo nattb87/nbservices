@@ -3,12 +3,46 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: url('../images/background.jpg') no-repeat center center fixed;
+  background: url('assets/images/background.jpg') no-repeat center center fixed; /* Fondo de la página */
   background-size: cover;
   color: #333;
 }
 
-/* Menú de navegación */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+button, a.button {
+  background-color: #0078d4;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover, a.button:hover {
+  background-color: #005bb5;
+}
+
+/* Cabecera */
+header#hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(to right, #0078d4, #005bb5), url('assets/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+header#hero h1 {
+  font-size: 3rem;
+}
+
+header#hero p {
+  font-size: 1.2rem;
+}
+
+/* Navegación */
 nav {
   display: flex;
   justify-content: space-between;
@@ -41,14 +75,13 @@ nav ul.menu li a {
 }
 
 nav ul.menu li a:hover {
-  color: #ffcc00; /* Color dorado al hacer hover */
+  color: #ffcc00;
 }
 
-/* Sección Hero */
-#hero {
-  text-align: center;
-  padding: 6rem 2rem;
-  background: linear-gradient(to right, #0078d4, #005bb5), url('../images/background.jpg');
-  background-size: cover;
+/* Footer */
+footer {
+  background-color: #003850;
   color: white;
+  text-align: center;
+  padding: 1rem;
 }

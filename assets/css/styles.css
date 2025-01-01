@@ -3,7 +3,9 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background: url('../images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
 }
 
 /* Menú de navegación */
@@ -12,7 +14,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #003850;  /* Azul oscuro */
+  background-color: #003850;
   color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -39,27 +41,11 @@ nav ul.menu li a {
 }
 
 nav ul.menu li a:hover {
-  color: #ffcc00;  /* Cambia a un color dorado al pasar el mouse */
+  color: #ffcc00; /* Color dorado al hacer hover */
 }
 
 /* Sección Hero */
 #hero {
   text-align: center;
   padding: 6rem 2rem;
-  background: linear-gradient(to right, #0078d4, #005bb5), url('../images/background.jpg') no-repeat center center/cover;
-  color: white;
-  background-size: cover;
-}
-
-#hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-}
-
-#hero p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-}
-
-/* Sección de Servicios *
-
+  background: linear-gradient(to right, #0078d4, #005bb5), url('../images/background.jpg') no-re
